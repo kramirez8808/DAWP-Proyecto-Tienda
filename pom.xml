@@ -81,9 +81,9 @@
 		</dependency>
 		<!-- Dependencias de Semana 06: Firebase -->
 		<dependency>
-            <groupId>com.google.firebase</groupId>
-            <artifactId>firebase-admin</artifactId>
-            <version>9.1.1</version>
+                    <groupId>com.google.firebase</groupId>
+                    <artifactId>firebase-admin</artifactId>
+                    <version>9.1.1</version>
 		</dependency> 
 
 	</dependencies>

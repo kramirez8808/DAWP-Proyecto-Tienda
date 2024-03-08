@@ -1,4 +1,3 @@
-
 package dawp.tienda.impl;
 
 import dawp.tienda.dao.CategoriaDao;

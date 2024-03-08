@@ -16,7 +16,7 @@ public class Categoria implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Campo Auto-Incremental
     @Column(name = "id_categoria")
-    private Long idCategoria; //MySQL => id_categoria
+    private Long idCategoria; //Hibernate lo transforma/MySQL => id_categoria PK
     private String descripcion; //MySQL => descripcion
     private String rutaImagen; //MySQL => ruta_imagen
     private boolean activo; //MySQL => activo
