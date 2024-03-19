@@ -4,6 +4,7 @@ package dawp.tienda.domain;
 import lombok.Data;
 import jakarta.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @Entity
@@ -20,6 +21,11 @@ public class Categoria implements Serializable {
     private String descripcion; //MySQL => descripcion
     private String rutaImagen; //MySQL => ruta_imagen
     private boolean activo; //MySQL => activo
+
+    //Relación con la tabla Producto
+    @OneToMany
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false) //No se puede insertar ni actualizar, es solo para consultas
+    List<Producto> productos; 
 
     //Constructores
     public Categoria() {

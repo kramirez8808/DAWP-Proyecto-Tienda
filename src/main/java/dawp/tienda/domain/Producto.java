@@ -23,19 +23,23 @@ public class Producto implements Serializable {
     private int existencias; //MySQL => existencias
     private String rutaImagen; //MySQL => ruta_imagen
     private boolean activo; //MySQL => activo
-    private Long idCategoria; //MySQL => id_categoria FK
+    //private Long idCategoria; //MySQL => id_categoria FK
+    
+    //Relación con la tabla Categoria
+    @ManyToOne
+    @JoinColumn(name = "id_categoria")
+    Categoria categoria; //MySQL => id_categoria FK
 
     //Constructores
     public Producto() {
     }
 
-    public Producto(String descripcion, String detalle, double precio, int existencias, String rutaImagen, boolean activo, Long idCategoria) {
+    public Producto(String descripcion, String detalle, double precio, int existencias, String rutaImagen, boolean activo) {
         this.descripcion = descripcion;
         this.detalle = detalle;
         this.precio = precio;
         this.existencias = existencias;
         this.rutaImagen = rutaImagen;
         this.activo = activo;
-        this.idCategoria = idCategoria;
     }
 }
