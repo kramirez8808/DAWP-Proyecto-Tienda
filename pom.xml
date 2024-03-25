@@ -69,6 +69,7 @@
 			<artifactId>webjars-locator</artifactId>
 			<version>0.46</version>
 		</dependency>
+
 		<!-- Dependencias de Semana 05: MySQL e Hibernate -->
 		<dependency>
 			<groupId>com.mysql</groupId>
@@ -79,6 +80,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
 		<!-- Dependencias de Semana 06: Firebase -->
 		<dependency>
                     <groupId>com.google.firebase</groupId>
@@ -96,6 +98,12 @@
             <artifactId>thymeleaf-extras-springsecurity6</artifactId>
         </dependency>
 
+		<!-- Dependencias de Semana 10: Javax Validation -->
+		<dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
 	</dependencies>
 
 	<build>
