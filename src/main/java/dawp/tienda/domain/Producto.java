@@ -12,7 +12,6 @@ public class Producto implements Serializable {
     private static final long serialVersionUID = 1L;
 
     //Atributos
-    //Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Campo Auto-Incremental
     @Column(name = "id_producto")
